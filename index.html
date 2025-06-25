@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMP Simulator - Clássico</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1><a href="index.html">CAMP Simulator</a></h1>
+        </div>
+    </nav>
+
+    <main id="conteudo">
+
+        <div class="section">
+            <h2>O que é o CAMP?</h2>
+            <p>
+                O CAMP Simulator é um sistema de simulação de partidas baseado em confrontos táticos, escolhas manuais e estatísticas reais de elencos. Ideal para competições entre amigos, torneios organizados ou desafios de estratégia, o CAMP valoriza o realismo e a emoção das partidas.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Simulação Clássica</h2>
+            <p>Modo manual, simples e direto. Ideal para testes e partidas rápidas.</p>
+            <button onclick="abrirSelecaoTimes()">Iniciar</button>
+        </div>
+
+        <div class="section bloqueado">
+            <h2>Simulação Avançada</h2>
+            <p>Modo com roleta de eventos, substituições e outros acontecimento que deixam o jogo mais realista. Em breve.</p>
+            <button disabled>Bloqueado</button>
+        </div>
+
+        <div class="section bloqueado">
+            <h2>Simulação Automática</h2>
+            <p>Mano a Mano automático baseado em estatísticas reais. Em breve.</p>
+            <button disabled>Bloqueado</button>
+        </div>
+
+        <div class="section layout-responsivo" id="selecaoTimes" style="display:none;">
+            <h2>Escolha os Times</h2>
+            <label for="timeA">Time Mandante:</label>
+            <select id="timeA"></select>
+            <label for="timeB">Time Visitante:</label>
+            <select id="timeB"></select>
+            <br />
+            <div style="margin-top: 10px;">
+                <img id="logoTimeA" src="" alt="Logo Time A" width="50" style="display: none; margin-right: 20px;">
+                <img id="logoTimeB" src="" alt="Logo Time B" width="50" style="display: none;">
+            </div>
+            <br />
+            <label><input type="checkbox" id="campoNeutro"> Jogo em campo neutro (ambos ganham ponto de casa)</label>
+            <br />
+            <button id="btnAvancar" disabled onclick="irParaEscalacao()">Avançar</button>
+        </div>
+
+        <div class="section" id="escalacaoContainer" style="display:none;">
+            <h2>Montar Escalações</h2>
+            <div id="formacoes">
+                <label>Formação Time A:</label>
+                <select id="formacaoA"></select>
+                <label>Formação Time B:</label>
+                <select id="formacaoB"></select>
+            </div>
+            <div id="elencoTimes" style="margin-top: 20px;"></div>
+            <button id="botaoConfirmarEscalacao" onclick="confirmarEscalacoes()" disabled>Avançar</button>
+        </div>
+
+        <div id="modal">
+            <div id="listaJogadores"></div>
+            <button id="fecharModal">Fechar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2025 CAMP Simulator. Projeto independente para fins de entreterimento.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

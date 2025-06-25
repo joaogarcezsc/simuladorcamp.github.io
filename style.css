@@ -1,0 +1,456 @@
+/* ==================================================
+   CAMP Simulator - style.css
+   Tema esportivo estilo Transfermarkt
+   ================================================== */
+
+/* ========== Variáveis Globais ========== */
+:root {
+  --cor-azul-escuro: #0a1128;
+  --cor-azul-claro: #0066cc;
+  --cor-verde: #0ead69;
+  --cor-vermelho: #ff4c4c;
+  --cor-branco: #ffffff;
+  --cor-cinza: #f5f5f5;
+  --fonte: "Segoe UI", sans-serif;
+}
+
+/* ========== Reset e Layout Base ========== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--fonte);
+  background-color: var(--cor-cinza);
+  color: #333;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ========== Navegação ========== */
+nav {
+  background-color: var(--cor-azul-escuro);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--cor-azul-escuro);
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+  word-break: break-word;
+}
+
+/* ========== Seções / Containers ========== */
+.section {
+  background-color: var(--cor-branco);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section.bloqueado {
+  opacity: 0.6;
+}
+
+.intro {
+  padding: 10px;
+  background-color: var(--cor-branco);
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+  line-height: 1.6;
+}
+
+/* ========== Botões ========== */
+button {
+  background-color: var(--cor-azul-claro);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0050a8;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-preencher {
+  background-color: var(--cor-verde);
+}
+
+.btn-remover {
+  background-color: var(--cor-vermelho);
+  margin-left: 5px;
+}
+
+.btn-remover:hover {
+  background-color: #ff2424;
+}
+
+/* Modal específico */
+#modal button:not(#fecharModal) {
+  background-color: #0066cc;
+}
+
+#fecharModal {
+  background-color: #444;
+}
+
+/* ========== Select e Formulários ========== */
+select {
+  padding: 6px;
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* ========== Escalação Elencos ========== */
+#elencoTimes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#elencoTimes div,
+#elencoTimes button {
+  margin: 4px 0;
+}
+
+.coluna-time {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+@media (max-width: 700px) {
+  #elencoTimes {
+    flex-direction: column;
+  }
+}
+
+/* ========== Modal ========== */
+#modal {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: white;
+  border: 2px solid var(--cor-azul-escuro);
+  border-radius: 4px;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 100;
+  display: none;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* ========== Imagens de Times ========== */
+img.logo-time {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  object-fit: contain;
+}
+
+/* ========== Responsividade ========== */
+@media (max-width: 600px) {
+  .btn-remover {
+    font-size: 0.7em;
+    padding: 1px 5px;
+  }
+
+  #elencoTimes span,
+  #elencoTimes button {
+    font-size: 0.8em;
+  }
+
+  #elencoTimes div {
+    line-height: 1.2;
+  }
+}
+
+/* ========== Resultado Partida ========== */
+.resultado-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resultado-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resultado-container li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.resultado-container .goleador {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+/* ====== AJUSTES DE RESPONSIVIDADE COMPLETA PARA MOBILE ====== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.section {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: var(--cor-branco);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  nav h1 {
+    font-size: 1.3em;
+  }
+
+  .section {
+    margin: 15px auto;
+    padding: 15px;
+    width: 95%;
+  }
+
+  h2,
+  h3 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 8px 12px;
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  .btn-remover {
+    font-size: 0.75em;
+    padding: 3px 6px;
+  }
+
+  .intro p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    padding: 0 5px;
+  }
+
+  #modal {
+    width: 90%;
+    left: 5%;
+    padding: 15px;
+  }
+
+  #elencoTimes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .coluna-time {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .resultado-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .resultado-container h2 {
+    font-size: 1.1em;
+  }
+
+  .resultado-container li {
+    font-size: 0.95em;
+  }
+
+  footer {
+    font-size: 0.85em;
+    padding: 10px 15px;
+    word-break: break-word;
+    overflow-x: hidden;
+  }
+
+  img.logo-time {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 12px;
+    margin: 10px auto;
+  }
+
+  nav h1 {
+    font-size: 1.1em;
+  }
+
+  button {
+    font-size: 0.85em;
+    padding: 6px 10px;
+  }
+
+  .btn-remover {
+    font-size: 0.7em;
+  }
+
+  #elencoTimes span,
+  #elencoTimes button {
+    font-size: 0.85em;
+  }
+
+  .resultado-container h2 {
+    font-size: 1em;
+  }
+
+  .intro p {
+    font-size: 0.9em;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout-responsivo label,
+  .layout-responsivo select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .layout-responsivo select {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .layout-responsivo button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  select {
+    font-size: 0.9em;
+  }
+
+  select option {
+    font-size: 0.9em;
+    white-space: normal;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  select {
+    font-size: 0.45em;
+  }
+
+  select option {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 768px) {
+  #modal {
+    width: 90% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 10% !important;
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}
