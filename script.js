@@ -71,7 +71,7 @@ const formacoesDisponiveis = {
 };
 
 async function carregarJSON() {
-  const res = await fetch("/data/data.json");
+  const res = await fetch("data/data.json");
   const data = await res.json();
   times = data.times;
 
