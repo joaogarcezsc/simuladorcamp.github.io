@@ -412,11 +412,11 @@
       "logo": "",
       "estadio": "Babizão Stadium",
       "treinador": {
-        "nome": "Conte"
+        "nome": "Antonio Conte"
       },
       "jogadores": [
         { "nome": "Rodrygo", "posicao": "ponta" },
-        { "nome": "Patterson", "posicao": "lateral" },
+        { "nome": "Patterson", "posicao": "goleiro" },
         { "nome": "Marquinhos", "posicao": "zagueiro" },
         { "nome": "Akanji", "posicao": "zagueiro" },
         { "nome": "Robertson", "posicao": "lateral" },
@@ -427,7 +427,7 @@
         { "nome": "Ndiaye", "posicao": "ponta" },
         { "nome": "Pino", "posicao": "ponta" },
         { "nome": "Ferran Torres", "posicao": "ponta" },
-        { "nome": "Lookman", "posicao": "ponta" }
+        { "nome": "Lookman", "posicao": "atacante" }
       ]
     },
     {
