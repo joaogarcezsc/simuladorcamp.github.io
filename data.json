@@ -58,15 +58,19 @@
         },
         {
           "nome": "Mastantuono",
-          "posicao": "ponta"
+          "posicao": "meia"
         },
         {
           "nome": "Rafa Silva",
           "posicao": "ponta"
         },
         {
-          "nome": "Grealish",
+          "nome": "Gakpo",
           "posicao": "ponta"
+        },
+        {
+          "nome": "Grealish",
+          "posicao": "meia"
         },
         {
           "nome": "Marmoush",
@@ -115,6 +119,10 @@
           "posicao": "volante"
         },
         {
+          "nome": "Lewis-Skelly",
+          "posicao": "lateral"
+        },
+        {
           "nome": "Guendouzi",
           "posicao": "volante"
         },
@@ -132,6 +140,10 @@
         },
         {
           "nome": "Paul Nebel",
+          "posicao": "meia"
+        },
+        {
+          "nome": "Arda Guler",
           "posicao": "meia"
         },
         {
@@ -230,15 +242,15 @@
         },
         {
           "nome": "Enzo Fernández",
-          "posicao": "meia"
+          "posicao": "volante"
         },
         {
           "nome": "Éderson",
-          "posicao": "meia"
+          "posicao": "volante"
         },
         {
           "nome": "Jobe Bellingham",
-          "posicao": "meia"
+          "posicao": "volante"
         },
         {
           "nome": "Richard Rios",
@@ -400,11 +412,10 @@
       "logo": "",
       "estadio": "Babizão Stadium",
       "treinador": {
-        "nome": "Davizão"
+        "nome": "Conte"
       },
       "jogadores": [
         { "nome": "Rodrygo", "posicao": "ponta" },
-        { "nome": "Conte", "posicao": "meia" },
         { "nome": "Patterson", "posicao": "lateral" },
         { "nome": "Marquinhos", "posicao": "zagueiro" },
         { "nome": "Akanji", "posicao": "zagueiro" },
@@ -439,7 +450,7 @@
         { "nome": "Julian Brandt", "posicao": "meia" },
         { "nome": "Dani Olmo", "posicao": "meia" },
         { "nome": "Tyler Dibling", "posicao": "meia" },
-        { "nome": "McNeil", "posicao": "meia" },
+        { "nome": "McNeil", "posicao": "ponta" },
         { "nome": "Mohamed Amoura", "posicao": "ponta" },
         { "nome": "João Félix", "posicao": "ponta" },
         { "nome": "Haaland", "posicao": "atacante" }
@@ -449,7 +460,7 @@
       "nome": "Oklahoma City Thunder",
       "logo": "",
       "estadio": "Paycom Center",
-      "treinador": { "nome": "oklahoma" },
+      "treinador": { "nome": "Enzo Maresca" },
       "jogadores": [
         { "nome": "Savic", "posicao": "goleiro" },
         { "nome": "Konsa", "posicao": "zagueiro" },
@@ -484,7 +495,7 @@
         { "nome": "Unai Simón", "posicao": "goleiro" },
         { "nome": "Schlotterbeck", "posicao": "zagueiro" },
         { "nome": "Isak Hien", "posicao": "zagueiro" },
-        { "nome": "Lucas Hernandez", "posicao": "zagueiro" },
+        { "nome": "Lucas Hernandez", "posicao": "lateral" },
         { "nome": "Beraldo", "posicao": "zagueiro" },
         { "nome": "Mittelstadt", "posicao": "lateral" },
         { "nome": "Rico Lewis", "posicao": "lateral" },
@@ -493,11 +504,11 @@
         { "nome": "Joelinton", "posicao": "volante" },
         { "nome": "Fábio Vieira", "posicao": "meia" },
         { "nome": "Xavi Simons", "posicao": "meia" },
-        { "nome": "Estevão", "posicao": "ponta" },
-        { "nome": "Trincão", "posicao": "ponta" },
-        { "nome": "Gordon", "posicao": "ponta" },
-        { "nome": "Georginio Rutter", "posicao": "ponta" },
-        { "nome": "Dybala", "posicao": "ponta" },
+        { "nome": "Estevão", "posicao": "meia" },
+        { "nome": "Trincão", "posicao": "meia" },
+        { "nome": "Gordon", "posicao": "meia" },
+        { "nome": "Georginio Rutter", "posicao": "meia" },
+        { "nome": "Dybala", "posicao": "meia" },
         { "nome": "Gyokeres", "posicao": "atacante" },
         { "nome": "Sesko", "posicao": "atacante" }
       ]
@@ -533,10 +544,9 @@
       "nome": "Força Jovem Vasco",
       "logo": "",
       "estadio": "São Januário",
-      "treinador": { "nome": "Enzo" },
+      "treinador": { "nome": "Deschamps" },
       "jogadores": [
         { "nome": "Salah", "posicao": "ponta" },
-        { "nome": "Deschamps", "posicao": "meia" },
         { "nome": "Kinsky", "posicao": "zagueiro" },
         { "nome": "Bisseck", "posicao": "zagueiro" },
         { "nome": "Cristhian Mosquera", "posicao": "zagueiro" },
@@ -551,7 +561,7 @@
         { "nome": "Martinelli", "posicao": "ponta" },
         { "nome": "Van Dijk", "posicao": "zagueiro" },
         { "nome": "De Bruyne", "posicao": "meia" },
-        { "nome": "Timber", "posicao": "zagueiro" },
+        { "nome": "Timber", "posicao": "lateral" },
         { "nome": "Curbasi", "posicao": "zagueiro" },
         { "nome": "Diogo Costa", "posicao": "goleiro" },
         { "nome": "Rodri", "posicao": "volante" },
@@ -595,7 +605,7 @@
       "nome": "Kingston",
       "logo": "",
       "estadio": "Limão Stadium",
-      "treinador": { "nome": "" },
+      "treinador": { "nome": "Inzaghi" },
       "jogadores": [
         { "nome": "Allison", "posicao": "goleiro" },
         { "nome": "Sommer", "posicao": "goleiro" },
@@ -625,7 +635,7 @@
       "nome": "Panteras Negras",
       "logo": "",
       "estadio": "Wakanda",
-      "treinador": { "nome": "" },
+      "treinador": { "nome": "Simeone" },
       "jogadores": [
         { "nome": "Kimmich", "posicao": "volante" },
         { "nome": "Lautaro", "posicao": "atacante" },
@@ -658,17 +668,16 @@
         { "nome": "Omar El Hilali", "posicao": "lateral" },
         { "nome": "António Silva", "posicao": "zagueiro" },
         { "nome": "Toti", "posicao": "zagueiro" },
-        { "nome": "Hincapié", "posicao": "zagueiro" },
+        { "nome": "Hincapié", "posicao": "lateral" },
         { "nome": "Kim Min-Jae", "posicao": "zagueiro" },
         { "nome": "Lewis-Potter", "posicao": "lateral" },
-        { "nome": "Andrey Santos", "posicao": "meia" },
-        { "nome": "Merino", "posicao": "meia" },
+        { "nome": "Andrey Santos", "posicao": "volante" },
+        { "nome": "Merino", "posicao": "volante" },
         { "nome": "Bissouma", "posicao": "meia" },
         { "nome": "Jauregizar", "posicao": "meia" },
         { "nome": "Palmer", "posicao": "meia" },
         { "nome": "Mikkel Damsgaard", "posicao": "meia" },
         { "nome": "Antony", "posicao": "ponta" },
-        { "nome": "Yamal", "posicao": "ponta" },
         { "nome": "Saka", "posicao": "ponta" },
         { "nome": "Arkturkoglu", "posicao": "ponta" },
         { "nome": "Solanke", "posicao": "atacante" },
@@ -728,8 +737,8 @@
         { "nome": "Gravenberch", "posicao": "meia" },
         { "nome": "Goretzka", "posicao": "meia" },
         { "nome": "Wirtz", "posicao": "meia" },
-        { "nome": "Gündogan", "posicao": "meia" },
-        { "nome": "Casadó", "posicao": "meia" },
+        { "nome": "Gündogan", "posicao": "volante" },
+        { "nome": "Casadó", "posicao": "volante" },
         { "nome": "Diallo", "posicao": "ponta" },
         { "nome": "Moussa Diaby", "posicao": "ponta" },
         { "nome": "Rafael Leão", "posicao": "ponta" },
